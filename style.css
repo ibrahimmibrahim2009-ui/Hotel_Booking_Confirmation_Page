@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(67, 100%, 91%);
+}
+.container {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  width: 17vw;
+  max-height: 200vh;
+  padding: 20px 10px;
+  border-right: 1px solid grey;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.menu {
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: calc(200px * 2)
+}
+.menu div {
+  display: flex;
+  margin-bottom: 15px;
+}
+.menu div h5 {
+  padding-left: 5px;
+  font-family: "DM Sans";
+  font-weight: 500
+}
+
+.card {
+  background-color:hsl(45, 100%, 74%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 20px;
+  position: relative;
+  overflow: hidden;
+  font-family: "DM Mono";
+  line-height: 30px;
+  margin-bottom: 20px
+}
+.card img {
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  
+}
+.card h2 {
+  font-family: "Fraunces";
+  font-weight: 400;
+}
+.card p {
+  font-size: 10px
+}
+
+.last {
+  margin-top: 15px;
+  padding-right: 50px;
+  letter-spacing: 1px;
+}
+.last p {
+  margin-bottom: 10px;
+  font-family: "DM Mono";
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 10px
+}
+.last p:nth-child(2) {
+  line-height: 15px
+}
+
+main {
+  width: 83vw;
+  padding: 30px 20px 50px 20px;
+
+}
+main .first {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+main .first .words p {
+  font-family: "DM Mono";
+  text-transform: uppercase;
+  font-size: 12px;
+  color: hsl(33, 17%, 41%);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+main .first .words h1 {
+  font-family: "Fraunces";
+  font-weight: 400;
+}
+main .first .words i {
+  color: hsl(5, 85%, 39%)
+}
+main .buttons {
+  display: flex;
+  align-items: center;
+}
+main .buttons button{
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  border-color: hsl(5, 85%, 39%);
+  padding: 8px;
+  font-size: 12px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  margin-left: 10px;
+  
+}
+main .buttons button:first-of-type {
+  text-decoration: none;
+  border-style: solid;
+  border: none;
+  outline: 2px solid hsl(5, 85%, 39%);
+  outline-offset: 2px;
+  background-color:hsl(30, 24%, 93%);
+}
+
+main .buttons button:last-of-type {
+  background-color: black;
+  color: hsl(36, 22%, 86%);
+  border-width: 0;
+  outline: 2px solid hsl(5, 85%, 39%);
+  outline-offset: 2px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  margin-bottom: 40px
+}
+
+
+
+
+.box_1 {
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  width: 400px;
+  height: 370px;
+  padding: 15px;
+  margin-bottom: 5px;
+  position: relative;
+  right: -1.5px;
+  border-radius: 20px;
+  transform: rotate(-5deg);
+  box-shadow:  -1px 9px 10px 0px rgba(0, 0, 0, 0.24);
+  z-index: 2;
+}
+.box_1 .start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box_1 .start div:first-child {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.box_1 div p {
+  font-family: "DM Mono";
+  text-transform: uppercase;
+  font-size: 10px
+}
+.box_1 div h5 {
+  font-size: 18px; 
+  font-family: "Fraunces";
+  font-weight: 400;
+}
+
+.box_1 .start div:last-child {
+  font-family: "DM Mono";
+  font-weight: 500;
+  font-size: 10px
+}
+.duration div {
+  text-align: center;
+}
+.duration h1 {
+  font-family: "Fraunces";
+  font-weight: 400;
+  margin-bottom: 5px
+}
+
+.duration div p:first-child {
+  font-size: 9px;
+  color: hsl(33, 17%, 41%)
+}
+
+.duration div p:last-child {
+  font-family: "DM Sans";
+  font-weight: 500;
+}
+
+
+.duration {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  margin-top: 15px
+}
+.duration p:first-child {
+  color: hsl(33, 17%, 41%)
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.prices div:first-child {
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-weight: 600;
+}
+.prices div:last-child  {
+  font-family: "DM Mono";
+  font-size: 12px
+}
+
+.barcode {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px
+}
+.barcode div:first-child {
+  line-height: 40px;
+  font-weight: 500;
+}
+.barcode div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.barcode p:last-child {
+  color: hsl(33, 17%, 41%)
+}
+.barcode > div > p:first-child {
+  letter-spacing: 2px;
+    color: hsl(33, 17%, 41%)
+}
+.barcode h2 {
+  font-family: "Fraunces";
+  font-weight: 400;
+  font-size: 23px
+}
+.barcode img {
+  margin-bottom: 10px
+}
+
+
+
+.box_2 {
+  box-sizing: border-box;
+  box-shadow: -12px 26px 40px -1px rgb(186, 120, 120);
+  width: 400px;)
+  height: 370px;
+  border-radius: 20px;
+  padding: 15px;
+  z-index: 2;
+  position: relative;
+  left: -1.5px;
+  transform: rotate(5deg);
+  background-image: linear-gradient(to bottom left, hsl(22, 72%, 56%), hsl(18, 62%, 47%), hsl(15, 74%, 41%), hsl(15, 69%, 37%) );
+}
+
+.box_2 p:first-of-type {
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: "DM Mono";
+  font-weight: 500;
+    color: hsl(36, 22%, 86%)
+}
+.box_2 h4:first-of-type {
+  font-family: "Fraunces";
+  font-weight: 400;
+  font-size: 15px;
+    color: hsl(36, 22%, 86%)
+}
+.box_2 h2:first-of-type {
+  font-family: "Fraunces";
+  font-weight: 400;
+  color: white
+}
+.box_2 p:nth-of-type(2) {
+  color: hsl(36, 22%, 86%);
+  font-family: "DM Sans";
+  font-size: 12px;
+  margin-bottom: 100px;
+}
+
+.box_2 h2 {
+  margin-bottom: 20px;
+}
+
+.box_2 div {
+  background-color: grey;
+  margin-top: 60px;
+
+}
+.box_2 p:last-of-type {
+  color: hsl(36, 22%, 86%)
+}
+.box_2 h5 {
+  font-family: "Fraunces";
+  text-transform: capitalize;
+  font-size: 17px;
+  margin-top: 8px;
+  color: hsl(35, 60%, 96%);
+  font-weight: 400;
+}
+.box_2 p:last-of-type {
+  text-transform: uppercase;
+  font-family: "DM Mono";
+  font-size: 9px;
+  font-weight: 500;;
+}
+.box_2 img {
+  position: absolute;
+  top: 20px;
+  right: 15px
+}
+
+
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 45px;
+  box-sizing: border-box;
+  
+}
+.cards  > div {
+  box-sizing: border-box;
+  background-color: grey;
+  width: calc(80% / 3);
+  height: 250px;
+  border-radius: 15px;
+  background-color: white;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 7px 26px -6px rgba(0, 0, 0, 0.24);
+}
+.cards img {
+  border-radius: 5px;
+  transform: scale(1.2);
+  vertical-align: middle;
+}
+
+.cards .title div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.cards .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px
+}
+.cards .title div:first-child h5 {
+  padding-left: 10px;
+  font-family: "DM Mono";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.cards .title h4 {
+  font-family: "Fraunces";
+  font-weight: 400;
+  font-size: 23px
+}
+.cards .content h2 {
+  font-family: "Fraunces";
+  font-weight: 500;
+}
+.cards .content p {
+  font-family: "DM Sans";
+  font-size: 13px;
+  margin-bottom: 20px;
+  margin-top: 5px
+}
+.cards .content  h6 {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 14px
+}
+
+.cards .card_2 .content  div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(30, 24%, 93%);
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.cards .card_2 .content  div  h6:first-child {
+  text-transform: uppercase;
+  font-family: "DM Mono";
+  letter-spacing: 2px;
+}
+.cards .card_2 .content  div  h6:last-child {
+  font-family:  "DM Sans";
+  font-weight: 600;
+  font-size: 12px
+}
+
+.card_1 .title {
+  color: hsl(5, 85%, 39%)
+}
+.card_1 img {
+  background-color: hsl(5, 85%, 39%);
+} 
+
+.card_2 .title {
+  color: hsl(246, 57%, 48%)
+}
+
+.card_2 img {
+  background-color: hsl(246, 57%, 48%);
+}
+
+.card_3 .title {
+  color:hsl(344, 71%, 45%)
+}
+.card_3 img {
+  background-color: hsl(344, 71%, 45%)
+}
+
+main .buttons button:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+
